@@ -5,19 +5,19 @@
 {% endblock %}
 
 {% block content %}
-    <h1>Главная страница</h1>
-    <p>Покупай!</p>
+<!--    <h1>Главная страница</h1>-->
+<!--    <p>Покупай!</p>-->
 
     <div class="album py-5 bg-light">
         <div class="container">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                {% for el in Products %}
+                {% for el in products %}
                 <div class="col">
                     <div class="card shadow-sm" >
 <!--                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">-->
 <!--&lt;!&ndash;                            <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="45%" y="45%" fill="#eceeef" dy=".3em">Thumbnail</text> &ndash;&gt;-->
 
-                            <img class="product-block__image" width="100%" height="100%" src="{{ el.image.url }}" alt="Product" />
+                            <img class="card-image" width="100%" height="100%" src="{{ el.image.url }}" alt="Product" />
 
 <!--                        </svg>-->
 
